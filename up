@@ -35,7 +35,7 @@ flameshot &
 
 # Boot picom or compton if it exists
 if [ -x "$(command -v picom)" ]; then
-  picom --config $HOME/.config/leftwm/themes/current/picom.conf --animations --animation-window-mass 0.5  &> /dev/null &
+  picom --config "$HOME/.config/leftwm/themes/current/picom.conf" -b --animations --animation-window-mass 0.5 --experimental-backends  &> /dev/null &
   #picom --config $HOME/.config/leftwm/themes/current/picom.conf --experimental-backends &> /dev/null &
   #picom &> /dev/null &
   #picom --experimental-backends &> /dev/null &
