@@ -35,7 +35,7 @@ flameshot &
 
 # Boot picom or compton if it exists
 if [ -x "$(command -v picom)" ]; then
-  picom --config "$HOME/.config/leftwm/themes/current/picom.conf" -b --experimental-backends  &> /dev/null &
+  picom --config "$HOME/.config/leftwm/themes/current/picom.conf" -b &> /dev/null &
   #picom --config $HOME/.config/leftwm/themes/current/picom.conf --experimental-backends &> /dev/null &
   #picom &> /dev/null &
   #picom --experimental-backends &> /dev/null &
