@@ -42,7 +42,7 @@ if [ -x "$(command -v picom)" ]; then
 elif [ -x "$(command -v compton)" ]; then
   compton --config $HOME/.config/leftwm/themes/current/compton.conf &> /dev/null &
 elif [ -x "$(command -v compfy)" ]; then
-  compfy --config $HOME/.config/leftwm/themes/current/compfy.conf &> /dev/null &
+  compfy --daemon --config $HOME/.config/leftwm/themes/current/compfy.conf &> /dev/null &
 fi
 
 # Set the theme.ron config
